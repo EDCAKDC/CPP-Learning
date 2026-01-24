@@ -1,0 +1,5 @@
+/home/edcakdc/cpp/build/CMakeFiles/block.dir
+/home/edcakdc/cpp/build/CMakeFiles/main.dir
+/home/edcakdc/cpp/build/CMakeFiles/test.dir
+/home/edcakdc/cpp/build/CMakeFiles/edit_cache.dir
+/home/edcakdc/cpp/build/CMakeFiles/rebuild_cache.dir
