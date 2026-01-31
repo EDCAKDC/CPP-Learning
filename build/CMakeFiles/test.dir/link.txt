@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/test.dir/test.cpp.o -o test  libblock.a 
+/usr/bin/g++ CMakeFiles/test.dir/test.cpp.o -o test  libblock.a 

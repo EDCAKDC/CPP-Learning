@@ -73,15 +73,15 @@ CMakeFiles/block.dir/block.cpp.o: CMakeFiles/block.dir/flags.make
 CMakeFiles/block.dir/block.cpp.o: /home/edcakdc/cpp/block.cpp
 CMakeFiles/block.dir/block.cpp.o: CMakeFiles/block.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/edcakdc/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/block.dir/block.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/block.dir/block.cpp.o -MF CMakeFiles/block.dir/block.cpp.o.d -o CMakeFiles/block.dir/block.cpp.o -c /home/edcakdc/cpp/block.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/block.dir/block.cpp.o -MF CMakeFiles/block.dir/block.cpp.o.d -o CMakeFiles/block.dir/block.cpp.o -c /home/edcakdc/cpp/block.cpp
 
 CMakeFiles/block.dir/block.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/block.dir/block.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edcakdc/cpp/block.cpp > CMakeFiles/block.dir/block.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edcakdc/cpp/block.cpp > CMakeFiles/block.dir/block.cpp.i
 
 CMakeFiles/block.dir/block.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/block.dir/block.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edcakdc/cpp/block.cpp -o CMakeFiles/block.dir/block.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edcakdc/cpp/block.cpp -o CMakeFiles/block.dir/block.cpp.s
 
 # Object files for target block
 block_OBJECTS = \
