@@ -117,6 +117,7 @@ int main() {
 }
 */
 
+/*
 double prod(double x, double y)
 {
     return x * y;
@@ -141,3 +142,93 @@ int main() {
     std::cout << "Result: " << prod(a, b) << '\n';
     return 0;
 }
+*/
+
+
+/******************************************************
+
+Date: 2026-01-31
+
+Topic: C++ loops (for/while), EOF input, sum/max/avg
+
+Notes:
+
+Practiced for-loop when count is known (read n numbers)
+
+Used "seed first value" to initialize max correctly
+
+(avoid wrong max when numbers can be negative)
+
+Used while (std::cin >> x) to read until EOF
+
+Computed average with double cast: (double)sum / cnt
+
+Learned break/continue idea (control loop flow)
+******************************************************/
+
+/*
+int main() {
+    int n;
+    std::cout << "Input n " << '\n';
+    std::cin >> n;
+    if (n <= 0) {
+        return 0;
+    }
+
+    long long sum = 0;
+
+    int mx;
+    std::cout << "Input mx " << '\n';
+    std::cin >> mx;
+    sum += mx;
+    for (int i = 1; i < n; i++) {
+        int x;
+        std::cin >> x;
+        sum += x;
+        if (x > mx){
+            mx = x;
+        }
+    }
+    std::cout << "sum = " << sum << '\n';
+    std::cout << "max = " << mx << '\n';
+    return 0;
+}
+*/
+
+
+int main() {
+    long long sum = 0;
+    int cnt = 0;
+    int x;
+
+    while (std::cin >> x) {
+        sum += x;
+        cnt++;
+    }
+
+    std::cout << "count = " << cnt << '\n';
+    std::cout << "sum = " << sum << '\n';
+
+    if (cnt > 0) {
+        double avg = (double)sum / cnt;
+        std::cout << "avg = " << avg << '\n';
+    } else {
+        std::cout << "avg = N/A\n";
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

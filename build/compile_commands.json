@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/edcakdc/cpp/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/block.dir/block.cpp.o -c /home/edcakdc/cpp/block.cpp",
+  "file": "/home/edcakdc/cpp/block.cpp",
+  "output": "CMakeFiles/block.dir/block.cpp.o"
+},
+{
+  "directory": "/home/edcakdc/cpp/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/main.dir/main.cpp.o -c /home/edcakdc/cpp/main.cpp",
+  "file": "/home/edcakdc/cpp/main.cpp",
+  "output": "CMakeFiles/main.dir/main.cpp.o"
+},
+{
+  "directory": "/home/edcakdc/cpp/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/test.dir/test.cpp.o -c /home/edcakdc/cpp/test.cpp",
+  "file": "/home/edcakdc/cpp/test.cpp",
+  "output": "CMakeFiles/test.dir/test.cpp.o"
+}
+]
