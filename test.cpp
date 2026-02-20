@@ -1,5 +1,7 @@
 #include <iostream>
-
+#include <vector>
+#include <utility>   
+#include <limits>    
 /* int main() {
     //int a =2, b=6;
     int a, b;
@@ -196,7 +198,7 @@ int main() {
 */
 
 
-int main() {
+/*int main() {
     long long sum = 0;
     int cnt = 0;
     int x;
@@ -216,14 +218,66 @@ int main() {
         std::cout << "avg = N/A\n";
     }
     return 0;
+}*/
+
+
+/*
+void f(int x) { x += 1; }
+void g(int &x) { x += 1; }
+void h(const int &x) {
+    std::cout << "h sees x =" << x << '\n';
 }
 
+int main() {
+    int a = 10;
 
+    f(a);
+    std::cout << "after f(a), a = " << a << '\n';
 
+    g(a);
+    std::cout << "after g(a), a = " << a << '\n';
 
+    h(a);
+    return 0;
+}
+*/
 
+/******************************************************
 
+Date: 2026-02-19
 
+Topic: C++ parameter passing (by value / by reference / const reference) + std namespace
+
+Notes:
+Understood pass-by-value: makes a copy, changes inside function won't affect outside
+
+Understood pass-by-reference (&): no copy, can modify the original variable
+
+Understood pass-by-const-reference (const &): no copy, read-only, best for large objects (e.g., vector/string)
+******************************************************/
+
+std::pair<long long, int> sum_max(const std::vector<int>& v) {
+    long long sum =0;
+    int mx = std::numeric_limits<int>::min();
+    for (int x : v) {
+        sum += x;
+        if (x > mx) mx = x;
+    }
+    return {sum, mx};
+}
+
+int main(){
+    std::vector<int> v = {5, -6, 6, 7};
+
+    auto ans = sum_max(v);
+    std::cout << "sum = " << ans.first << '\n';
+    std::cout << "max = " << ans.second << '\n';
+
+    auto [sum, mx] = sum_max(v);
+    std::cout << "sum = " <<sum << ", max = " << mx << '\n';
+
+    return 0;
+}
 
 
 
