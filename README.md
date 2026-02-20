@@ -14,4 +14,4 @@ and added basic input validation with `std::cin` failure checks and error handli
 Practiced C++ loops (`for`/`while`) and basic interactive I/O with `std::cin`/`std::cout`. Wrote small programs to compute `sum/max` for `n` numbers and `count/sum/avg` by reading until EOF, including a `double` cast for average.
 
 ## 2026-02-17  
-Practiced writing reusable functions in C++ and learned parameter passing (by value vs reference vs const reference), plus returning multiple results using std::pair.  
+Practiced writing reusable functions in C++ and learned parameter passing (by value vs reference vs const reference), plus returning multiple results using `std::pair`.  
