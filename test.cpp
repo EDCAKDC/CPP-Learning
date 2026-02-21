@@ -220,6 +220,19 @@ int main() {
     return 0;
 }*/
 
+/******************************************************
+
+Date: 2026-02-19
+
+Topic: C++ parameter passing (by value / by reference / const reference) + std namespace
+
+Notes:
+Understood pass-by-value: makes a copy, changes inside function won't affect outside
+
+Understood pass-by-reference (&): no copy, can modify the original variable
+
+Understood pass-by-const-reference (const &): no copy, read-only, best for large objects (e.g., vector/string)
+******************************************************/
 
 /*
 void f(int x) { x += 1; }
@@ -242,20 +255,7 @@ int main() {
 }
 */
 
-/******************************************************
-
-Date: 2026-02-19
-
-Topic: C++ parameter passing (by value / by reference / const reference) + std namespace
-
-Notes:
-Understood pass-by-value: makes a copy, changes inside function won't affect outside
-
-Understood pass-by-reference (&): no copy, can modify the original variable
-
-Understood pass-by-const-reference (const &): no copy, read-only, best for large objects (e.g., vector/string)
-******************************************************/
-
+/*
 std::pair<long long, int> sum_max(const std::vector<int>& v) {
     long long sum =0;
     int mx = std::numeric_limits<int>::min();
@@ -278,11 +278,114 @@ int main(){
 
     return 0;
 }
+*/
+
+/******************************************************
+
+Date: 2026-02-20
+
+Topic: C++ vector basics + sum_vec (const reference)
+
+Notes:
+Learned how to use std::vector<int> (push_back, size, reserve)
+
+Practiced reading n integers into a vector
+
+Wrote sum_vec(const vector<int>& v) to compute sum without copying the vector
+
+Used long long for sum to avoid overflow
+
+******************************************************/
 
 
+/*
+long long sum_vec(const std::vector<int>& v) {
+    long long sum = 0;
+    for (int x : v) {
+        sum += x;
+    }
+    return sum;
+}
 
+int main() {
+    int n;
+    std::cout << "Input n: ";
+    std::cin >> n;
+    if (n <= 0) return 0;
 
+    std::vector<int> v;
+    v.reserve(n);
 
+    std::cout << "Input " << n << " integers:\n";
+    for (int i = 0; i < n; i++) {
+        int x;
+        std::cin >> x;
+        v.push_back(x);
+    }
 
+    std::cout << "sum = " << sum_vec(v) << '\n';
+    return 0;
+}
+*/
 
+/*
+long long mx_vec(const std::vector<int>& v) {
+    int mx = std::numeric_limits<int>::min();
+    for (int x : v) {
+        if (x >= mx) mx = x;
+    }
+    return mx;
+}
 
+int main() {
+    int n;
+    std::cout << "Input n: ";
+    std::cin >> n;
+    if (n <= 0) {
+        std::cout << "n must be > 0\n";
+        return 0;
+    }
+    std::vector<int> v;
+    v.reserve(n);
+
+    std::cout << "Input " << n << " integers:\n";
+
+    for (int i =0; i < n; i++) {
+        int x;
+        std::cin >> x;
+        v.push_back(x);
+    }
+    std::cout << "max = " << mx_vec(v) << '\n';
+    return 0;
+}
+*/
+
+long long count_pos(const std::vector<int>& v) {
+    int pos = 0;
+    for (int x : v) {
+        if (x > 0) pos += 1;
+    }
+    return pos;
+}
+
+int main() {
+    int n;
+    std::cout << "Input n: ";
+    std::cin >> n;
+    if (n <= 0) {
+        std::cout << "n must be > 0\n";
+        return 0;
+    }
+    std::vector<int> v;
+    v.reserve(n);
+
+    std::cout << "Input " << n << " integers:\n";
+
+    for (int i =0; i < n; i++) {
+        int x;
+        std::cin >> x;
+        v.push_back(x);
+    }
+    std::cout << "Counts pos = " << count_pos(v) << '\n';
+    return 0;
+}
