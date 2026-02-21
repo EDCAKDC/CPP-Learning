@@ -15,3 +15,6 @@ Practiced C++ loops (`for`/`while`) and basic interactive I/O with `std::cin`/`s
 
 ## 2026-02-17  
 Practiced writing reusable functions in C++ and learned parameter passing (by value vs reference vs const reference), plus returning multiple results using `std::pair`.  
+
+## 2026-02-18  
+Practiced using `std::vector` (push_back, size, loops) and wrote simple functions that take `const vector<int>&` to compute sum/max/count without copying. 
