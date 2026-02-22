@@ -360,6 +360,7 @@ int main() {
 }
 */
 
+/*
 long long count_pos(const std::vector<int>& v) {
     int pos = 0;
     for (int x : v) {
@@ -389,3 +390,133 @@ int main() {
     std::cout << "Counts pos = " << count_pos(v) << '\n';
     return 0;
 }
+*/
+
+/******************************************************
+Date: 2026-02-21
+Topic: C++ vector stats (sum/max/positive count) + returning multiple values
+Notes:
+Combined multiple statistics (sum, max, positive count) in a single pass over a vector
+Used std::numeric_limits<int>::min() for safe max initialization
+Practiced returning multiple results using a struct (Stats)
+Refined function return types (int for max/count, long long for sum)
+******************************************************/
+
+struct Stats {
+    long long sum;
+    int mx;
+    int pos;
+};
+
+Stats stats_vec(const std::vector<int>& v) {
+    Stats st;
+    st.sum = 0;
+    st.mx = std::numeric_limits<int>::min();
+    st.pos = 0;
+
+    for (int x : v) {
+        st.sum += x;
+        if (x > st.mx) st.mx = x;
+        if (x > 0) st.pos++;
+    }
+    return st;
+}
+
+int main() {
+    int n;
+    std::cout << "Input n: ";
+    std::cin >> n;
+    if (n <= 0) {
+        std::cout << "n must be > 0\n";
+        return 0;
+    }
+
+    std::vector<int> v;
+    v.reserve(n);
+
+    std::cout << "Input " << n << " integers:\n";
+    for (int i = 0; i < n; i++) {
+        int x;
+        std::cin >> x;
+        v.push_back(x);
+    }
+
+    Stats st = stats_vec(v);
+    std::cout << "sum = " << st.sum << '\n';
+    std::cout << "max = " << st.mx << '\n';
+    std::cout << "pos_count = " << st.pos << '\n';
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
