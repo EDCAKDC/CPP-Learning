@@ -13,8 +13,11 @@ and added basic input validation with `std::cin` failure checks and error handli
 ## 2026-01-31  
 Practiced C++ loops (`for`/`while`) and basic interactive I/O with `std::cin`/`std::cout`. Wrote small programs to compute `sum/max` for `n` numbers and `count/sum/avg` by reading until EOF, including a `double` cast for average.
 
-## 2026-02-17  
+## 2026-02-19  
 Practiced writing reusable functions in C++ and learned parameter passing (by value vs reference vs const reference), plus returning multiple results using `std::pair`.  
 
-## 2026-02-18  
+## 2026-02-20  
 Practiced using `std::vector` (push_back, size, loops) and wrote simple functions that take `const vector<int>&` to compute sum/max/count without copying. 
+
+## 2026-02-21
+Implemented a simple `Stats` workflow for vectors: computed sum/max/positive-count in a single pass, used safe max initialization (`numeric_limits<int>::min()`), and practiced returning multiple results via a small struct while keeping parameters as `const vector<int>&` to avoid copying.
