@@ -21,3 +21,6 @@ Practiced using `std::vector` (push_back, size, loops) and wrote simple function
 
 ## 2026-02-21
 Implemented a simple `Stats` workflow for vectors: computed sum/max/positive-count in a single pass, used safe max initialization (`numeric_limits<int>::min()`), and practiced returning multiple results via a small struct while keeping parameters as `const vector<int>&` to avoid copying.
+
+## 2026-03-02
+Practiced sorting vectors with `std::sort` and removing duplicates using the `sort + unique + erase` pattern, then used the deduplicated size to count distinct values.
