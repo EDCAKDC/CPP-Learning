@@ -2,6 +2,7 @@
 #include <vector>
 #include <utility>   
 #include <limits>    
+#include <algorithm>
 /* int main() {
     //int a =2, b=6;
     int a, b;
@@ -401,7 +402,7 @@ Used std::numeric_limits<int>::min() for safe max initialization
 Practiced returning multiple results using a struct (Stats)
 Refined function return types (int for max/count, long long for sum)
 ******************************************************/
-
+/*
 struct Stats {
     long long sum;
     int mx;
@@ -447,18 +448,96 @@ int main() {
     std::cout << "pos_count = " << st.pos << '\n';
     return 0;
 }
+*/
+
+/******************************************************
+Date: 2026-03-02
+Topic: C++ vector sorting + deduplication (sort / unique / erase)
+Notes:
+Practiced sorting a vector with std::sort(v.begin(), v.end())
+Learned the standard dedup pattern: sort + unique + erase
+Understood that unique only moves duplicates to the end (erase actually removes them)
+Used v.size() after dedup to get the number of distinct elements
+******************************************************/
+
+/*
+int main() {
+    int n;
+    std::cout << "Input n" << '\n';
+    std::cin >> n;
+
+    std::vector<int> v;
+    v.reserve(n);
+
+    for (int i = 0; i < n ; i++ ) {
+        int x;
+        std::cin >> x;
+        v.push_back(x);
+    }
+
+    std::sort(v.begin(), v.end());
+
+    for (int x : v) {
+        std::cout << x << ' ';
+    }
+    std::cout << '\n';
+    return 0;
+
+}
+*/
+
+/*
+int main() {
+    int n;
+    std::cout << "Input n" << '\n';
+    std::cin >> n;
+
+    std::vector<int> v;
+    v.reserve(n);
+
+    for (int i = 0; i < n ; i++ ) {
+        int x;
+        std::cin >> x;
+        v.push_back(x);
+    }
+
+    std::cout << "before = " << v.size() << '\n';
+
+    std::sort(v.begin(), v.end());
+    auto it = std::unique(v.begin(), v.end()); 
+    v.erase(it, v.end());                      
+
+    std::cout << "after = " << v.size() << '\n';
+
+    for (int x : v) {
+        std::cout << x << ' ';
+    }
+    std::cout << '\n';
+    return 0;
+}
+*/
 
 
+int main() {
+    int n;
+    std::cout << "Input n" << '\n';
+    std::cin >> n;
 
+    std::vector<int> v;
+    v.reserve(n);
 
+    for (int i = 0; i < n; ++i) {
+        int x;
+        std::cin >> x;
+        v.push_back(x);
+    }
 
+    std::sort(v.begin(), v.end());
+    v.erase(std::unique(v.begin(), v.end()), v.end());
 
-
-
-
-
-
-
+    std::cout << "distinct_count = " << v.size() << '\n';
+    return 0;
+}
 
 
 
