@@ -3,6 +3,8 @@
 #include <utility>   
 #include <limits>    
 #include <algorithm>
+#include <unordered_map>
+#include <string>
 /* int main() {
     //int a =2, b=6;
     int a, b;
@@ -517,7 +519,7 @@ int main() {
 }
 */
 
-
+/*
 int main() {
     int n;
     std::cout << "Input n" << '\n';
@@ -538,6 +540,66 @@ int main() {
     std::cout << "distinct_count = " << v.size() << '\n';
     return 0;
 }
+*/
+
+/******************************************************
+Date: 2026-03-06
+Topic: C++ unordered_map frequency counting (hash map)
+Notes:
+Practiced using std::unordered_map to count frequencies with cnt[key]++
+Learned that operator[] creates a default value (0) for new keys
+Iterated through the map using for (auto &kv : cnt) to read key/value pairs
+Tracked the maximum frequency item during iteration (most frequent element)
+******************************************************/
+
+int main() {
+    int n;
+    std::cin >> n;
+
+    std::unordered_map<std::string, int> cnt;
+
+    for (int i = 0; i < n; i++) {
+        std::string word;
+        std::cin >>  word;
+        cnt[word]++;
+    }
+
+    for (auto &kv : cnt) {
+        std::cout << kv.first << " : " << kv.second << '\n';
+    }
+
+    std::string best_word = "";
+    int best_count = 0;
+
+    for (auto &kv : cnt) {
+        if (kv.second > best_count) {
+            best_count = kv.second;
+            best_word = kv.first;
+        }
+    }
+
+    std::cout << "most frequent = " << best_word
+              << ", count = " << best_count << '\n';
+    
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
