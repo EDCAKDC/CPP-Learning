@@ -24,3 +24,7 @@ Implemented a simple `Stats` workflow for vectors: computed sum/max/positive-cou
 
 ## 2026-03-02
 Practiced sorting vectors with `std::sort` and removing duplicates using the `sort + unique + erase` pattern, then used the deduplicated size to count distinct values.
+
+## 2026-03-06
+Practiced using `std::unordered_map` to count frequencies with `cnt[key]++`, learned that `operator[]` creates missing keys with a default value, iterated over key/value pairs, and tracked the most frequent element during a single pass.
+
