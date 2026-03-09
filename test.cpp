@@ -183,7 +183,7 @@ int main() {
     long long sum = 0;
 
     int mx;
-    std::cout << "Input mx " << '\n';
+    std::cout << "Input the first number " << '\n';
     std::cin >> mx;
     sum += mx;
     for (int i = 1; i < n; i++) {
