@@ -28,3 +28,7 @@ Practiced sorting vectors with `std::sort` and removing duplicates using the `so
 ## 2026-03-06
 Practiced using `std::unordered_map` to count frequencies with `cnt[key]++`, learned that `operator[]` creates missing keys with a default value, iterated over key/value pairs, and tracked the most frequent element during a single pass.
 
+## 2026-03-10
+Converted `unordered_map` counts to a `vector<pair<...>>`, sorted with a custom comparator (freq desc + tie-break), and printed TopK results.
+
+
