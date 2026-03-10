@@ -183,7 +183,7 @@ int main() {
     long long sum = 0;
 
     int mx;
-    std::cout << "Input the first number " << '\n';
+    std::cout << "Input mx " << '\n';
     std::cin >> mx;
     sum += mx;
     for (int i = 1; i < n; i++) {
@@ -552,6 +552,7 @@ Iterated through the map using for (auto &kv : cnt) to read key/value pairs
 Tracked the maximum frequency item during iteration (most frequent element)
 ******************************************************/
 
+/*
 int main() {
     int n;
     std::cin >> n;
@@ -583,12 +584,50 @@ int main() {
     
     return 0;
 }
+*/
 
 
+/******************************************************
+Date: 2026-03-10
+Topic: C++ map-to-vector conversion + custom sort for TopK
+Notes:
+Converted unordered_map frequency results into a vector<pair<key,count>> for sorting
+Practiced std::sort with a custom comparator (count descending, key as tie-breaker)
+Printed TopK items safely using min(K, items.size())
+******************************************************/
 
+bool cmp(const std::pair<std::string, int>& a,
+         const std::pair<std::string, int>& b) {
+    if (a.second != b.second) {
+        return a.second > b.second;
+    }
+    return a.first < b.first;
+}
 
+int main() {
+    int K;
+    std::cin >> K;   
 
+    std::unordered_map<std::string, int> cnt;
+    std::string word;
 
+    while (std::cin >> word) {
+        cnt[word]++;
+    }
+
+    std::vector<std::pair<std::string, int>> items;
+    for (const auto& kv : cnt) {
+        items.push_back(kv);
+    }
+
+    std::sort(items.begin(), items.end(), cmp);
+
+    for (int i = 0; i < K && i < (int)items.size(); i++) {
+        std::cout << items[i].first << "\t" << items[i].second << '\n';
+    }
+
+    return 0;
+}
 
 
 
