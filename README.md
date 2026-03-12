@@ -31,4 +31,5 @@ Practiced using `std::unordered_map` to count frequencies with `cnt[key]++`, lea
 ## 2026-03-10
 Converted `unordered_map` counts to a `vector<pair<...>>`, sorted with a custom comparator (freq desc + tie-break), and printed TopK results.
 
-
+## 2026-03-12
+Practiced modular C++ programming by separating declarations and implementations into `utils.h` and `utils.cpp`, reused shared helper functions in multiple programs, and learned how to build multiple executables in the same CMake project.
