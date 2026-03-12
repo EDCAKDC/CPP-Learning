@@ -155,6 +155,45 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
+#=============================================================================
+# Target rules for targets named utils
+
+# Build rule for target.
+utils: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utils
+.PHONY : utils
+
+# fast build rule for target.
+utils/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/build
+.PHONY : utils/fast
+
+#=============================================================================
+# Target rules for targets named freq_count
+
+# Build rule for target.
+freq_count: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 freq_count
+.PHONY : freq_count
+
+# fast build rule for target.
+freq_count/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/freq_count.dir/build.make CMakeFiles/freq_count.dir/build
+.PHONY : freq_count/fast
+
+#=============================================================================
+# Target rules for targets named topk
+
+# Build rule for target.
+topk: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 topk
+.PHONY : topk
+
+# fast build rule for target.
+topk/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topk.dir/build.make CMakeFiles/topk.dir/build
+.PHONY : topk/fast
+
 block.o: block.cpp.o
 .PHONY : block.o
 
@@ -178,6 +217,30 @@ block.s: block.cpp.s
 block.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/block.dir/build.make CMakeFiles/block.dir/block.cpp.s
 .PHONY : block.cpp.s
+
+freq_count.o: freq_count.cpp.o
+.PHONY : freq_count.o
+
+# target to build an object file
+freq_count.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/freq_count.dir/build.make CMakeFiles/freq_count.dir/freq_count.cpp.o
+.PHONY : freq_count.cpp.o
+
+freq_count.i: freq_count.cpp.i
+.PHONY : freq_count.i
+
+# target to preprocess a source file
+freq_count.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/freq_count.dir/build.make CMakeFiles/freq_count.dir/freq_count.cpp.i
+.PHONY : freq_count.cpp.i
+
+freq_count.s: freq_count.cpp.s
+.PHONY : freq_count.s
+
+# target to generate assembly for a file
+freq_count.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/freq_count.dir/build.make CMakeFiles/freq_count.dir/freq_count.cpp.s
+.PHONY : freq_count.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -227,6 +290,54 @@ test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.s
 .PHONY : test.cpp.s
 
+topk.o: topk.cpp.o
+.PHONY : topk.o
+
+# target to build an object file
+topk.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topk.dir/build.make CMakeFiles/topk.dir/topk.cpp.o
+.PHONY : topk.cpp.o
+
+topk.i: topk.cpp.i
+.PHONY : topk.i
+
+# target to preprocess a source file
+topk.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topk.dir/build.make CMakeFiles/topk.dir/topk.cpp.i
+.PHONY : topk.cpp.i
+
+topk.s: topk.cpp.s
+.PHONY : topk.s
+
+# target to generate assembly for a file
+topk.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topk.dir/build.make CMakeFiles/topk.dir/topk.cpp.s
+.PHONY : topk.cpp.s
+
+utils.o: utils.cpp.o
+.PHONY : utils.o
+
+# target to build an object file
+utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/utils.cpp.o
+.PHONY : utils.cpp.o
+
+utils.i: utils.cpp.i
+.PHONY : utils.i
+
+# target to preprocess a source file
+utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/utils.cpp.i
+.PHONY : utils.cpp.i
+
+utils.s: utils.cpp.s
+.PHONY : utils.s
+
+# target to generate assembly for a file
+utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/utils.cpp.s
+.PHONY : utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -236,17 +347,29 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... block"
+	@echo "... freq_count"
 	@echo "... main"
 	@echo "... test"
+	@echo "... topk"
+	@echo "... utils"
 	@echo "... block.o"
 	@echo "... block.i"
 	@echo "... block.s"
+	@echo "... freq_count.o"
+	@echo "... freq_count.i"
+	@echo "... freq_count.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"
+	@echo "... topk.o"
+	@echo "... topk.i"
+	@echo "... topk.s"
+	@echo "... utils.o"
+	@echo "... utils.i"
+	@echo "... utils.s"
 .PHONY : help
 
 

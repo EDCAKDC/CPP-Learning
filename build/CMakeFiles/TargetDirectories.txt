@@ -1,5 +1,8 @@
 /home/edcakdc/cpp/build/CMakeFiles/block.dir
 /home/edcakdc/cpp/build/CMakeFiles/main.dir
 /home/edcakdc/cpp/build/CMakeFiles/test.dir
+/home/edcakdc/cpp/build/CMakeFiles/utils.dir
+/home/edcakdc/cpp/build/CMakeFiles/freq_count.dir
+/home/edcakdc/cpp/build/CMakeFiles/topk.dir
 /home/edcakdc/cpp/build/CMakeFiles/edit_cache.dir
 /home/edcakdc/cpp/build/CMakeFiles/rebuild_cache.dir
