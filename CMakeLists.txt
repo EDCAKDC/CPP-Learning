@@ -4,7 +4,7 @@ project(cpp_demo LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# ===== old part: block + main/test =====
+# ===== block library =====
 add_library(block
     block.cpp
 )
@@ -29,7 +29,7 @@ target_link_libraries(test
     block
 )
 
-# ===== new part: utils + freq_count/topk =====
+# ===== utils library =====
 add_library(utils
     utils.cpp
 )
@@ -52,4 +52,21 @@ add_executable(topk
 
 target_link_libraries(topk
     utils
+)
+
+# ===== word_counter library =====
+add_library(word_counter
+    word_counter.cpp
+)
+
+target_include_directories(word_counter PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+add_executable(word_counter_app
+    main_word_counter.cpp
+)
+
+target_link_libraries(word_counter_app
+    word_counter
 )

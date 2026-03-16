@@ -1,3 +1,9 @@
+#include <string>
+#include <iostream>
+#include "word_counter.h"
+
+
+
 /*
 #include <iostream>
 
@@ -20,6 +26,7 @@ int main()
 }
 */
 
+/*
 #include "blocks.h"
 
 int main()
@@ -28,3 +35,6 @@ int main()
     block2();
     return 0;
 }
+*/
+
+
