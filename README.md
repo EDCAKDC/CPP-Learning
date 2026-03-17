@@ -31,15 +31,13 @@ Practiced using `std::unordered_map` to count frequencies with `cnt[key]++`, lea
 ## 2026-03-10
 Converted `unordered_map` counts to a `vector<pair<...>>`, sorted with a custom comparator (freq desc + tie-break), and printed TopK results.
 
-## 2026-03-15
-
+## 2026-03-11
 Practiced defining a custom C++ class by creating `word_counter.h` and `word_counter.cpp`, learned the difference between standalone helper functions and class member functions, and used CMake to add a new executable (`word_counter_app`) in the same project.
 
 ## 2026-03-12
 Practiced modular C++ programming by separating declarations and implementations into `utils.h` and `utils.cpp`, reused shared helper functions in multiple programs, and learned how to build multiple executables in the same CMake project.
 
 ## 2026-03-16
-
 Practiced basic C++ class design by building a `WordCounter` class, moved the word frequency data into a private unordered_map, added public member functions such as `add()`, `print()`, `size()`, `contains()`, `get_count()`, and `clear()`, and strengthened my understanding of how objects manage their own data and behavior.
 
 
