@@ -1,0 +1,3 @@
+/home/edcakdc/cpp/class_practice/build/CMakeFiles/word_counter_app.dir
+/home/edcakdc/cpp/class_practice/build/CMakeFiles/edit_cache.dir
+/home/edcakdc/cpp/class_practice/build/CMakeFiles/rebuild_cache.dir
