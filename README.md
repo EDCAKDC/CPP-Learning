@@ -37,3 +37,11 @@ Practiced defining a custom C++ class by creating `word_counter.h` and `word_cou
 
 ## 2026-03-12
 Practiced modular C++ programming by separating declarations and implementations into `utils.h` and `utils.cpp`, reused shared helper functions in multiple programs, and learned how to build multiple executables in the same CMake project.
+
+##2026-03-13
+
+Practiced basic C++ class design by building a `WordCounter` class, moved the word frequency data into a private unordered_map, added public member functions such as `add()`, `print()`, `size()`, `contains()`, `get_count()`, and `clear()`, and strengthened my understanding of how objects manage their own data and behavior.
+
+
+
+
