@@ -40,6 +40,8 @@ Practiced defining a custom C++ class by creating `word_counter.h` and `word_cou
 ## 2026-03-16
 Practiced basic C++ class design by building a `WordCounter` class, moved the word frequency data into a private unordered_map, added public member functions such as `add()`, `print()`, `size()`, `contains()`, `get_count()`, and `clear()`, and strengthened my understanding of how objects manage their own data and behavior.
 
+## 2026-03-14
 
+Practiced C++ constructor basics by adding a constructor to the `WordCounter` class, learned that constructors run automatically when an object is created, initialized the `total` member to keep track of total input words, and reinforced the idea that objects should manage and initialize their own internal state.
 
 
