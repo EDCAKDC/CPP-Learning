@@ -44,7 +44,7 @@ Practiced basic C++ class design by building a `WordCounter` class, moved the wo
 
 Practiced C++ constructor basics by adding a constructor to the `WordCounter` class, learned that constructors run automatically when an object is created, initialized the `total` member to keep track of total input words, and reinforced the idea that objects should manage and initialize their own internal state.
 
-## 2026-03-19
+## 2026-03-23
 
 Practiced better C++ class design by using initializer lists in constructors, added overloaded constructors to create `WordCounter` objects with different names, worked with multiple objects in the same program, and reinforced the idea that each object maintains its own internal state independently.
 
