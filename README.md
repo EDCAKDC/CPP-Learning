@@ -48,3 +48,6 @@ Practiced C++ constructor basics by adding a constructor to the `WordCounter` cl
 
 Practiced better C++ class design by using initializer lists in constructors, added overloaded constructors to create `WordCounter` objects with different names, worked with multiple objects in the same program, and reinforced the idea that each object maintains its own internal state independently.
 
+## 2026-03-31
+
+Practiced improving a C++ class by adding more practical member functions, including removing words, resetting object state, comparing two `WordCounter` objects, and returning structured data from the class instead of only printing results. Reinforced the idea of separating class declarations and implementations across `.h` and `.cpp` files, and learned how a class can expose processed data for use in main().
