@@ -1,0 +1,8 @@
+Counter name: file_counter
+Unique words: 4
+Total words: 9
+
+apple : 4
+banana : 2
+orange : 2
+grape : 1
