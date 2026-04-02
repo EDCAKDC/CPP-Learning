@@ -51,3 +51,7 @@ Practiced better C++ class design by using initializer lists in constructors, ad
 ## 2026-03-31
 
 Practiced improving a C++ class by adding more practical member functions, including removing words, resetting object state, comparing two `WordCounter` objects, and returning structured data from the class instead of only printing results. Reinforced the idea of separating class declarations and implementations across `.h` and `.cpp` files, and learned how a class can expose processed data for use in main().
+
+## 2026-04-01
+
+Practiced C++ file I/O by extending my `WordCounter` project to read from `input.txt` and write results to `result.txt`. Learned how to use `ifstream`, `ofstream`, and file-open checks in a multi-file class project.
