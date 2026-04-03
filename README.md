@@ -55,3 +55,7 @@ Practiced improving a C++ class by adding more practical member functions, inclu
 ## 2026-04-01
 
 Practiced C++ file I/O by extending my `WordCounter` project to read from `input.txt` and write results to `result.txt`. Learned how to use `ifstream`, `ofstream`, and file-open checks in a multi-file class project.
+
+## 2026-04-02
+
+Practiced C++ command line arguments by modifying my `WordCounter` project to read from a user-specified input file and write results to a user-specified output file. Learned how `argc` and `argv` work in a multi-file project.
