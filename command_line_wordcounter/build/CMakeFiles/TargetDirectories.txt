@@ -1,0 +1,4 @@
+/home/edcakdc/cpp/command_line_wordcounter/build/CMakeFiles/wordcounter_lib.dir
+/home/edcakdc/cpp/command_line_wordcounter/build/CMakeFiles/word_counter_app.dir
+/home/edcakdc/cpp/command_line_wordcounter/build/CMakeFiles/edit_cache.dir
+/home/edcakdc/cpp/command_line_wordcounter/build/CMakeFiles/rebuild_cache.dir

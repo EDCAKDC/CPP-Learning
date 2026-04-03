@@ -1,0 +1,4 @@
+Counter name: file_counter
+Unique words: 0
+Total words: 0
+
